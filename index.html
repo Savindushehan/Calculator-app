@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor</title>
+  <link id="cssLink" rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="row-head">
+        <h3>calc</h3>
+        <div class="right-theme">
+          <h2>THEME</h2>
+          <div class="column">
+            <div class="space">
+            <button id="s1"></button>
+            <button id="s2"></button>
+            <button id="s3"></button>
+            </div>
+            <div class="up-row">
+              <span id="n1">1</span>
+              <span id="n2">2</span>
+              <span id="n3">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+      </div>
+      <form name = "form1">  
+      
+        <div class="screen">
+          <input id = "result" type ="text" name = "answer" readonly>
+        </div>
+
+      <div class="use-section">
+ 
+   
+    <div class="row1">
+      <input type = "button" id="b1" value = "7" onclick = "form1.answer.value += '7' ">  
+      <input type = "button" id="b2" value = "8" onclick = "form1.answer.value += '8' ">  
+      <input type = "button" id="b3" value = "9" onclick = "form1.answer.value += '9' ">  
+      <input type="button" id="b4" value="DEL" onclick="form1.answer.value = form1.answer.value.slice(0, -1)" id="clear1">
+    </div>
+    <div class="row2">
+      <input type = "button" id="b5" value = "4" onclick = "form1.answer.value += '4' ">  
+      <input type = "button" id="b6" value = "5" onclick = "form1.answer.value += '5' ">  
+      <input type = "button" id="b7" value = "6" onclick = "form1.answer.value += '6' ">  
+      <input type = "button" id="b8" value = "+" onclick = "form1.answer.value += '+' ">  
+    </div>
+    <div class="row3">
+      <input type = "button" id="b9" value = "1" onclick = "form1.answer.value += '1' ">  
+      <input type = "button" id="b10" value = "2" onclick = "form1.answer.value += '2' ">  
+      <input type = "button" id="b11" value = "3" onclick = "form1.answer.value += '3' ">  
+      <input type = "button" id="b12" value = "-" onclick = "form1.answer.value += '-' ">  
+    </div>
+    <div class="row4">
+      <input type = "button" id="b13" value = "." onclick = "form1.answer.value += '.' ">  
+      <input type = "button" id="b14" value = "0" onclick = "form1.answer.value += '0' ">  
+        <input type = "button" id="b15" value = "/" onclick = "form1.answer.value += '/' "> 
+        <input type = "button" id="b16" value = "x" onclick = "form1.answer.value += '*' ">  
+      </div>
+      <div class="row5">
+        <input type = "button" id="b17" value = "RESET" onclick = "form1.answer.value = ' ' " id= "clear" >  
+      <input type = "button" id="b18" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">  
+    </div>
+
+      </div>
+    </form>  
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
